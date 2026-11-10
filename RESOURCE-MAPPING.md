@@ -226,7 +226,7 @@ Source: https://www.sceb2.com/ks3-7-8/year-8/y8-test-5
 ## Practice question selection
 
 
-Proposed pupil journey: **Year → test → topic → difficulty → individual question pack**. Routes below are topic-level candidates based on the live page headings and folder names. The topic folders may cover material outside a given test window: **select and verify the packs against that test’s checklist before linking them in a pupil-facing page**. Files are shared across tests, not copied for each one.
+Pupil journey: **Year → test → topic → difficulty → individual question pack**. Show all packs from the relevant topic folder at each test, allowing students to choose; the checklist identifies the content for that test window. Files are shared across tests, not copied for each one. Year 7 Test 5 uses the Term 6 checklists.
 
 | Test | Candidate topic collections |
 | --- | --- |
@@ -243,7 +243,7 @@ Proposed pupil journey: **Year → test → topic → difficulty → individual 
 
 ### Question pack inventory
 
-The archive folders supply the difficulty labels. Links below are inventories of **all** uploaded packs in each folder, not an approved selection for every test. Some PDFs contain mark schemes after the questions: two representative PDFs were checked, but answer availability has not been verified for every pack. Check content and rights before public hosting.
+The archive folders supply the difficulty labels. Links below are inventories of **all** uploaded packs in each folder. Some PDFs contain mark schemes after the questions: two representative PDFs were checked, but answer availability has not been verified for every pack. Check content and rights before public hosting.
 
 <a id="y7-cells"></a>
 #### Year 7: Cells

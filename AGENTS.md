@@ -59,11 +59,11 @@ The owner confirms existing quizzes are anonymous Forms and teacher reporting is
 
 Smart Bank progress may clear when the page is closed. Within the same open session, checked assessment answers must update the RAG learning checklist, and navigation within the bank must preserve that session's progress.
 
-Practice question selection should follow **test → topic → difficulty (Developing, Secure, Extending) → available question packs**. The uploaded archives already group packs by year, topic and difficulty. Maintain one canonical copy of each file and reuse it across tests, selecting packs for the actual test window rather than exposing a whole topic automatically. Levels have differing pack counts. Two sampled PDFs contain their mark schemes within the PDF; do not assume separate answer files or that all packs contain answers. Inspect packs and clarify public availability of answers before publication. Whole practice papers outside the topic folders need a placement decision.
+Practice question selection follows **test → topic → difficulty (Developing, Secure, Extending) → available question packs**. Show all available packs in the relevant topic folder at each test window and let students choose; students can use their checklist to identify the material covered in their test. Maintain one canonical copy of each file and reuse it across tests. Levels have differing pack counts. Two sampled PDFs contain their mark schemes within the PDF; do not assume separate answer files or that all packs contain answers. Whole practice papers outside the topic folders need a placement decision. Year 7 Test 5 takes place in Term 6 and uses Term 6 checklists.
 
 ## Decisions before implementation
 
-1. Review the selection of question packs for each test window and decide the placement of whole practice papers and public availability of answers.
+1. Decide the placement of whole practice papers and public availability of answers.
 2. Confirm the complete source materials, including working Diffusion and Cell Structure Smart Bank HTML, and whether existing pages should be preserved exactly or edited for consistency.
 3. Agree dark-mode colours, typography, topic accents and the preferred mobile layout, and test the selectable theme across pages.
 4. Confirm the exact meaning of session continuity across page refreshes or navigation between different embedded pages; closing the page may clear progress.
