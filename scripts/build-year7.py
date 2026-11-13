@@ -23,7 +23,7 @@ head=DRAFT[:DRAFT.index('</head>')+7]
 head=head.replace('Year 7 Test 1 · Exam Bank draft','Year 7 Test 1 · Exam Bank')
 head=head.replace('draft-assets/checklist-three-arrows.png','draft-assets/checklist-three-arrows.png')
 head=head.replace('</head>','<style>.masthead{background:#07583e;border-bottom:0}.masthead h1,:root[data-theme=dark] .masthead h1{color:#fff;text-shadow:2px 2px 2px rgba(0,0,0,.65);flex:1;min-width:0}.masthead .header-back{color:#fff}.topic-link .topic-label{color:#07583e;font-size:1rem;font-weight:700;white-space:nowrap}:root[data-theme=dark] .topic-link .topic-label{color:#a0e7c1}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .topic-link .topic-label{color:#a0e7c1}}@media(max-width:400px){.masthead h1,:root[data-page-view]:not([data-page-view=test]) .masthead h1,:root[data-page-view=test] .masthead h1{font-size:1.05rem}}</style></head>')
-head=head.replace('</head>','<style>.resource-group h3{display:inline-flex;vertical-align:baseline;padding:0;margin:0 9px 9px 0}.resource-group .group-note{display:inline;vertical-align:baseline;position:relative;top:-2px;margin:0;line-height:1.4}</style></head>')
+head=head.replace('</head>','<style>.resource-group .group-note{font-size:.82rem}</style></head>')
 
 style=html.fromstring(DRAFT)
 icons={}
