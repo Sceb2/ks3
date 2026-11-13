@@ -75,7 +75,7 @@ Practice question selection follows **test → topic → difficulty (Developing,
 
 ## Year 7 development branch redesign (13 November 2026)
 
-The `development` branch now contains the approved Year 7 Test 1 visual direction across `index.html` and `year-7-test-1.html` through `year-7-test-5.html`. The year hub links to each test; each test links to its own topic views. The current checklist illustration is `draft-assets/checklist-three-arrows.png`. Do not treat the untracked earlier image experiments or preview ZIP as site assets.
+The `development` branch now contains the approved Year 7 Test 1 visual direction across `index.html` and `year-7-test-1.html` through `year-7-test-5.html`. The year hub links to each test; each test links to its own topic views. The current checklist illustration is `assets/checklist-three-arrows.png`. Do not treat the untracked earlier image experiments or preview ZIP as site assets.
 
 `data/year7-resources.json` is the link inventory taken from the pre-redesign Year 7 pages. `scripts/extract-year7.py` reproduces that inventory from commit `24884d1`; `scripts/build-year7.py` generates the new static pages using the approved draft styles and the inventory. Keep test-specific Forms and checklists in their corresponding test entries. Test 5 uses Term 6 checklists. Retain the full Developing, Secure and Extending question-pack lists for each topic, and link to external revision sites rather than copying their content.
 

@@ -21,7 +21,6 @@ for a in old1.xpath('//a[contains(@href,"smart-bank")]'):
 
 head=DRAFT[:DRAFT.index('</head>')+7]
 head=head.replace('Year 7 Test 1 · Exam Bank draft','Year 7 Test 1 · Exam Bank')
-head=head.replace('draft-assets/checklist-three-arrows.png','draft-assets/checklist-three-arrows.png')
 head=head.replace('</head>','<style>.masthead{background:#07583e;border-bottom:0}.masthead h1,:root[data-theme=dark] .masthead h1{color:#fff;text-shadow:2px 2px 2px rgba(0,0,0,.65);flex:1;min-width:0}.masthead .header-back{color:#fff}.topic-link .topic-label{color:#07583e;font-size:1rem;font-weight:700;white-space:nowrap}:root[data-theme=dark] .topic-link .topic-label{color:#a0e7c1}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .topic-link .topic-label{color:#a0e7c1}}@media(max-width:400px){.masthead h1,:root[data-page-view]:not([data-page-view=test]) .masthead h1,:root[data-page-view=test] .masthead h1{font-size:1.05rem}}</style></head>')
 head=head.replace('</head>','<style>.resource-group .group-note{font-size:.82rem}</style></head>')
 
@@ -32,7 +31,7 @@ for group in style.xpath('//section[contains(@class,"resource-group")][h3]'):
     if title and title not in icons:
         icons[title]=html.tostring(group.xpath('./h3/svg')[0],encoding='unicode',method='html')
 ext_icon=html.tostring(style.xpath('//svg[contains(@class,"external-icon")]')[0],encoding='unicode',method='html')
-check_img='<img class="checklist-illustration" src="draft-assets/checklist-three-arrows.png" alt="" width="96" height="80">'
+check_img='<img class="checklist-illustration" src="assets/checklist-three-arrows.png" alt="" width="96" height="80">'
 
 def link(a,cls='resource-row',pack=False):
     title=escape(a['title'].replace('Open question pack','').strip())
