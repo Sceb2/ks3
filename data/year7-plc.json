@@ -1,0 +1,845 @@
+{
+  "1": {
+    "test": {
+      "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Checklist.pdf",
+      "title": "Test 1 checklist",
+      "sections": {
+        "Induction": [
+          "Link the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit",
+          "Show how circuit components work, including the brightness of bulbs, the loudness of buzzers and the on/off position of switches",
+          "Use symbols when representing a simple circuit in a diagram e.g. bulbs and switches",
+          "Recognise that living things have changed over time and that fossils provide information about living things",
+          "Recognise that living things produce offspring of the same kind, but normally offspring vary and are not identical to their parents",
+          "Identify how animals and plants are adapted to suit their environment",
+          "Explain that unsupported objects fall towards the Earth because of the force of gravity",
+          "Identify the effects of air resistance, water resistance and friction",
+          "Describe the changes as humans develop to old age",
+          "Identify the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood",
+          "Recognise the impact of diet, exercise, drugs and lifestyle on the way their bodies function",
+          "Describe the ways in which nutrients and water are transported within animals, including humans",
+          "Recognise that light appears to travel in straight lines",
+          "Explain that we see things because light travels from light sources to our eyes or from light sources to objects and then to our eyes",
+          "Use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them",
+          "Describe the differences in the life cycles of a mammal, an amphibian, an insect and a bird",
+          "Describe how plants reproduce",
+          "Describe how animals reproduce",
+          "Describe how living things are classified into groups according to common characteristics"
+        ],
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Label a diagram to show the parts of a microscope",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "State the function and location of key human organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division",
+          "Explain why heart rate must increase during intense exercise"
+        ],
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Describe the difference between energy stores and transfers",
+          "State the four ways energy can be transferred",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "State the meaning of \"non-renewable",
+          "State the tree types of fossil fuel and describe their uses",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Compare the advantages/disadvantages of renewables and fossil fuels"
+        ]
+      }
+    },
+    "prior": {
+      "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Induction%20Checklist.pdf",
+      "title": "Test 1: Induction checklist",
+      "sections": {
+        "Induction": [
+          "Link the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit",
+          "Show how circuit components work, including the brightness of bulbs, the loudness of buzzers and the on/off position of switches",
+          "Use symbols when representing a simple circuit in a diagram e.g. bulbs and switches",
+          "Recognise that living things have changed over time and that fossils provide information about living things",
+          "Recognise that living things produce offspring of the same kind, but normally offspring vary and are not identical to their parents",
+          "Identify how animals and plants are adapted to suit their environment",
+          "Explain that unsupported objects fall towards the Earth because of the force of gravity",
+          "Identify the effects of air resistance, water resistance and friction",
+          "Describe the changes as humans develop to old age",
+          "Identify the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood",
+          "Recognise the impact of diet, exercise, drugs and lifestyle on the way their bodies function",
+          "Describe the ways in which nutrients and water are transported within animals, including humans",
+          "Recognise that light appears to travel in straight lines",
+          "Explain that we see things because light travels from light sources to our eyes or from light sources to objects and then to our eyes",
+          "Use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them",
+          "Describe the differences in the life cycles of a mammal, an amphibian, an insect and a bird",
+          "Describe how plants reproduce",
+          "Describe how animals reproduce",
+          "Describe how living things are classified into groups according to common characteristics"
+        ]
+      }
+    },
+    "cells": {
+      "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Cells%20Checklist.pdf",
+      "title": "Test 1: Cells checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Label a diagram to show the parts of a microscope",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "State the function and location of key human organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division"
+        ]
+      }
+    },
+    "energy": {
+      "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Energy%20Checklist.pdf",
+      "title": "Test 1: Energy checklist",
+      "sections": {
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Describe the difference between energy stores and transfers",
+          "State the four ways energy can be transferred",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "State the meaning of \"non-renewable",
+          "State the tree types of fossil fuel and describe their uses",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Compare the advantages/disadvantages of renewables and fossil fuels"
+        ]
+      }
+    }
+  },
+  "2": {
+    "test": {
+      "pdf": "resources/Checklists/Term%202/Y7%20Term%202%20Checklist.pdf",
+      "title": "Test 2 checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Label a diagram to show the parts of a microscope",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "State the function and location of key human organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division",
+          "Compare animal and bacterial cells",
+          "Describe a method to test the levels of bacteria on different surfaces",
+          "Explain why toothpaste contains anti-bacterial chemicals",
+          "Define communicable disease",
+          "State the types of organisms which cause disease",
+          "Suggest ways we can prevent the spread of communicable diseases",
+          "Give examples of ways the human body can prevent infection",
+          "Explain how vaccines can be used to reduce the spread of some diseases",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Explain why some specialised cells have more mitochondria than others",
+          "Explain why a yeast solution \"bubbles\" when sugar is added to it",
+          "Describe the role of muscles and bones",
+          "Explain how your arm moves in terms of antagonistic pairs of muscles",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ],
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Describe the difference between energy stores and transfers",
+          "State the four ways energy can be transferred",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "State the meaning of \"non-renewable",
+          "State the tree types of fossil fuel and describe their uses",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Compare the advantages/disadvantages of renewables and fossil fuels",
+          "Draw a diagram showing the carbon cycle",
+          "Describe how human activities have effected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Explain how human actions have contributed towards global warming",
+          "List some impacts of global warming",
+          "Name the three most common gases in our atmosphere",
+          "State the approximate percentage of each gas in our atmosphere",
+          "Describe two processes that have caused the atmosphere to change over time",
+          "Draw a diagram to show how to measure the energy in food",
+          "Describe the term \"sustainable food production",
+          "Describe advantages and disadvantages of a vegan diet",
+          "Describe the difference between organic and intensive farming",
+          "Describe advantages and disadvantages of organic farming"
+        ]
+      }
+    },
+    "cells": {
+      "pdf": "resources/Checklists/Term%202/Y7%20Term%202%20Cells%20Checklist.pdf",
+      "title": "Test 2: Cells checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Label a diagram to show the parts of a microscope",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "State the function and location of key human organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division",
+          "Compare animal and bacterial cells",
+          "Describe a method to test the levels of bacteria on different surfaces",
+          "Explain why toothpaste contains anti-bacterial chemicals",
+          "Define communicable disease",
+          "State the types of organisms which cause disease",
+          "Suggest ways we can prevent the spread of communicable diseases",
+          "Give examples of ways the human body can prevent infection",
+          "Explain how vaccines can be used to reduce the spread of some diseases",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Explain why some specialised cells have more mitochondria than others",
+          "Explain why a yeast solution \"bubbles\" when sugar is added to it",
+          "Describe the role of muscles and bones",
+          "Explain how your arm moves in terms of antagonistic pairs of muscles",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ]
+      }
+    },
+    "energy": {
+      "pdf": "resources/Checklists/Term%202/Y7%20Term%202%20Energy%20Checklist.pdf",
+      "title": "Test 2: Energy checklist",
+      "sections": {
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Describe the difference between energy stores and transfers",
+          "State the four ways energy can be transferred",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "State the meaning of \"non-renewable",
+          "State the tree types of fossil fuel and describe their uses",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Compare the advantages/disadvantages of renewables and fossil fuels",
+          "Draw a diagram showing the carbon cycle",
+          "Describe how human activities have effected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Explain how human actions have contributed towards global warming",
+          "List some impacts of global warming",
+          "Name the three most common gases in our atmosphere",
+          "State the approximate percentage of each gas in our atmosphere",
+          "Describe two processes that have caused the atmosphere to change over time",
+          "Draw a diagram to show how to measure the energy in food",
+          "Describe the term \"sustainable food production",
+          "Describe advantages and disadvantages of a vegan diet",
+          "Describe the difference between organic and intensive farming",
+          "Describe advantages and disadvantages of organic farming"
+        ]
+      }
+    }
+  },
+  "3": {
+    "test": {
+      "pdf": "resources/Checklists/Term%203/Y7%20Term%203%20Checklist.pdf",
+      "title": "Test 3 checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division",
+          "Compare animal and bacterial cells",
+          "Explain why toothpaste contains anti-bacterial chemicals",
+          "Define communicable disease",
+          "State the types of organisms which cause disease",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Explain why some specialised cells have more mitochondria than others",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ],
+        "Chemicals": [
+          "Describe what an element is in terms of types of atoms",
+          "Describe how a molecule is formed from atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Draw particle diagrams of the three states of matter: solids, liquids and gases",
+          "State the physical properties of the three states of matter",
+          "Compare the kinetic energy of particles in different states of matter",
+          "Explain why solids and liquids cannot be compressed easily, but gases can",
+          "Identify the four main changes of state",
+          "Describe what happens to the particles in a substance during a change of state",
+          "List a range of common household acids and bases",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Compare how useful different pH indicators are",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction"
+        ],
+        "Forces and Motion": [
+          "Describe the difference between contact and non contact forces",
+          "State a range of contact and non-contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "Explain why an object will start to accelerate using the idea of forces",
+          "Explain why an object will travel at a steady speed using the idea of forces",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "Calculate your mass or weight.",
+          "Try this one: Earth's gravity is 9.8N/kg, Mr Wormstone has a mass of 78kg. What is his weight?\"",
+          "State the forces that occur when a boat moves through water and floats on water"
+        ]
+      }
+    },
+    "revision-cells": {
+      "pdf": "resources/Checklists/Term%203/Y7%20Term%203%20Cells%20Checklist.pdf",
+      "title": "Test 3: Cells (Revision) checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Define specialised cell",
+          "Identify specialised cells of plants and animals from a diagram",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Order the levels of organisation in organisms",
+          "Describe how cells make tissues and tissues make organs",
+          "Give three reasons why cell division takes place",
+          "Sequence the stages of cell division",
+          "Compare animal and bacterial cells",
+          "Explain why toothpaste contains anti-bacterial chemicals",
+          "Define communicable disease",
+          "State the types of organisms which cause disease",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Explain why some specialised cells have more mitochondria than others",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ]
+      }
+    },
+    "chemicals": {
+      "pdf": "resources/Checklists/Term%203/Y7%20Term%203%20Chemicals%20Checklist.pdf",
+      "title": "Test 3: Chemicals checklist",
+      "sections": {
+        "Chemicals": [
+          "Describe what an element is in terms of types of atoms",
+          "Describe how a molecule is formed from atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Draw particle diagrams of the three states of matter: solids, liquids and gases",
+          "State the physical properties of the three states of matter",
+          "Compare the kinetic energy of particles in different states of matter",
+          "Explain why solids and liquids cannot be compressed easily, but gases can",
+          "Identify the four main changes of state",
+          "Describe what happens to the particles in a substance during a change of state",
+          "List a range of common household acids and bases",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Compare how useful different pH indicators are",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction"
+        ]
+      }
+    },
+    "forces": {
+      "pdf": "resources/Checklists/Term%203/Y7%20Term%203%20Forces%20and%20Motion%20Checklist.pdf",
+      "title": "Test 3: Forces checklist",
+      "sections": {
+        "Forces and Motion": [
+          "Describe the difference between contact and non contact forces",
+          "State a range of contact and non-contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "Explain why an object will start to accelerate using the idea of forces",
+          "Explain why an object will travel at a steady speed using the idea of forces",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "Calculate your mass or weight.",
+          "Try this one: Earth's gravity is 9.8N/kg, Mr Wormstone has a mass of 78kg. What is his weight?\"",
+          "State the forces that occur when a boat moves through water and floats on water"
+        ]
+      }
+    }
+  },
+  "4": {
+    "test": {
+      "pdf": "resources/Checklists/Term%204/Y7%20Term%204%20Checklist.pdf",
+      "title": "Test 4 checklist",
+      "sections": {
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Describe how human activities have affected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Explain how human actions have contributed towards global warming",
+          "List some impacts of global warming",
+          "Name the three most common gases in our atmosphere"
+        ],
+        "Chemicals": [
+          "State the approximate percentage of each gas in our atmosphere",
+          "Describe what an element is in terms of types of atoms",
+          "Describe how a molecule is formed from atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Draw particle diagrams of the three states of matter: solids, liquids and gases",
+          "State the physical properties of the three states of matter",
+          "Compare the kinetic energy of particles in different states of matter",
+          "Explain why solids and liquids cannot be compressed easily, but gases can",
+          "Identify the four main changes of state",
+          "Describe what happens to the particles in a substance during a change of state",
+          "List a range of common household acids and bases",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Compare how useful different pH indicators are",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction",
+          "Identify common scientific warning labels e.g. irritant, corrosive, toxic",
+          "Define the key terms; solution, solvent, solute and soluble",
+          "Draw a particle diagram to show how a solution is formed",
+          "Describe how to separate a soluble solid from a solution by evaporation",
+          "Explain why filtration could not be used to separate a mixture of salt and water",
+          "Describe how distillation can be used to separate a mixture of liquid",
+          "State the method of separation which is used for a mixture of coloured dyes",
+          "Describe a method to identify the coloured dyes which have gone into a paint mixture",
+          "Explain why chromatography cannot be used to separate the pigments in a colouring pencil",
+          "Identify which separation technique would be suitable for a given mixture"
+        ],
+        "Forces and Motion": [
+          "Describe the difference between contact and non-contact forces",
+          "State a range of contact and non-contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "Explain why an object will start to accelerate using the idea of forces",
+          "Explain why an object will travel at a steady speed using the idea of forces",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "Calculate your mass or weight.",
+          "Try this one: Earth's gravity is 9.8N/kg, Mr Wormstone has a mass of 78kg. What is his weight?\"",
+          "State the forces that occur when a boat moves through water and floats on water",
+          "State useful and unhelpful examples of friction",
+          "Explain why friction occurs between two surfaces",
+          "Describe the difference between the independent and dependent and control variables",
+          "State the equation that links speed, distance and time.",
+          "State the units of speed, distance and time",
+          "Calculate speed, distance or time using the equation s = d/t.",
+          "Try this one: A car travels 90m in 45s. What is its speed?",
+          "Describe factors that affect stopping distances",
+          "Describe the difference between braking distance and thinking distance",
+          "Explain the difference between speed (or velocity) and acceleration",
+          "Recall and use a formula to calculate acceleration",
+          "Explain how pressure is caused inside a can of coke in terms of particles",
+          "Use the idea of forces why a rocket can take off",
+          "Explain how more aerodynamic shapes help rockets fly"
+        ]
+      }
+    },
+    "revision-energy": {
+      "pdf": "resources/Checklists/Term%204/Y7%20Term%204%20Energy%20Checklist.pdf",
+      "title": "Test 4: Energy (Revision) checklist",
+      "sections": {
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Define what a renewable energy resource is",
+          "State examples of renewable energy resources e.g. solar, wind",
+          "Explain how solar, wind and tidal resources work in terms of energy transfer",
+          "Describe how human activities have effected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Explain how human actions have contributed towards global warming",
+          "List some impacts of global warming",
+          "Name the three most common gases in our atmosphere",
+          "State the approximate percentage of each gas in our atmosphere"
+        ]
+      }
+    },
+    "chemicals": {
+      "pdf": "resources/Checklists/Term%204/Y7%20Term%204%20Chemicals%20Checklist.pdf",
+      "title": "Test 4: Chemicals checklist",
+      "sections": {
+        "Chemicals": [
+          "Describe what an element is in terms of types of atoms",
+          "Describe how a molecule is formed from atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Draw particle diagrams of the three states of matter: solids, liquids and gases",
+          "State the physical properties of the three states of matter",
+          "Compare the kinetic energy of particles in different states of matter",
+          "Explain why solids and liquids cannot be compressed easily, but gases can",
+          "Identify the four main changes of state",
+          "Describe what happens to the particles in a substance during a change of state",
+          "List a range of common household acids and bases",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Compare how useful different pH indicators are",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction",
+          "Identify common scientific warning labels e.g. irritant, corrosive, toxic",
+          "Define the key terms; solution, solvent, solute and soluble",
+          "Draw a particle diagram to show how a solution is formed",
+          "Describe how to separate a soluble solid from a solution by evaporation",
+          "Explain why filtration could not be used to separate a mixture of salt and water",
+          "Describe how distillation can be used to separate a mixture of liquid",
+          "State the method of separation which is used for a mixture of coloured dyes",
+          "Describe a method to identify the coloured dyes which have gone into a paint mixture",
+          "Explain why chromatography cannot be used to separate the pigments in a colouring pencil",
+          "Identify which separation technique would be suitable for a given mixture"
+        ]
+      }
+    },
+    "forces": {
+      "pdf": "resources/Checklists/Term%204/Y7%20Term%204%20Forces%20and%20Motion%20Checklist.pdf",
+      "title": "Test 4: Forces checklist",
+      "sections": {
+        "Forces and Motion": [
+          "Describe the difference between contact and non contact forces",
+          "State a range of contact and non-contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "Explain why an object will start to accelerate using the idea of forces",
+          "Explain why an object will travel at a steady speed using the idea of forces",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "Calculate your mass or weight.",
+          "Try this one: Earth's gravity is 9.8N/kg, Mr Wormstone has a mass of 78kg. What is his weight?\"",
+          "State the forces that occur when a boat moves through water and floats on water",
+          "State useful and unhelpful examples of friction",
+          "Explain why friction occurs between two surfaces",
+          "Describe the difference between the independent and dependent and control variables",
+          "State the equation that links speed, distance and time.",
+          "State the units of speed, distance and time",
+          "Calculate speed, distance or time using the equation s = d/t.",
+          "Try this one: A car travels 90m in 45s. What is its speed?",
+          "Describe factors that affect stopping distances",
+          "Describe the difference between braking distance and thinking distance",
+          "Explain the difference between speed (or velocity) and acceleration",
+          "Recall and use a formula to calculate acceleration",
+          "Explain how pressure is caused inside a can of coke in terms of particles",
+          "Use the idea of forces why a rocket can take off",
+          "Explain how more aerodynamic shapes help rockets fly"
+        ]
+      }
+    }
+  },
+  "5": {
+    "test": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Checklist.pdf",
+      "title": "Test 5 checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Define specialised cell",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Describe how cells make tissues and tissues make organs",
+          "Give three reasons why cell division takes place",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ],
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Draw a diagram showing the carbon cycle",
+          "Describe how human activities have affected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Name the three most common gases in our atmosphere",
+          "State the approximate percentage of each gas in our atmosphere",
+          "Describe two processes that have caused the atmosphere to change over time"
+        ],
+        "Chemicals": [
+          "Describe what an element is in terms of types of atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction",
+          "Identify common scientific warning labels e.g. irritant, corrosive, toxic",
+          "Define the key terms; solution, solvent, solute and soluble",
+          "Draw a particle diagram to show how a solution is formed"
+        ],
+        "Forces": [
+          "Describe the difference between contact and non contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "State the equation that links speed, distance and time.",
+          "State the units of speed, distance and time",
+          "Calculate speed, distance or time using the equation s = d/t. Try this one: A car travels 90m in 45s. What is its speed?",
+          "Describe factors that affect stopping distances",
+          "Describe the difference between braking distance and thinking distance"
+        ],
+        "Interdependence": [
+          "Draw a food chain and web for a described feeding relationship",
+          "Identify producers, consumers and decomposers in a feeding relationship",
+          "Predict the effect of an environmental change on a food web",
+          "State the resources that animals and plants compete for",
+          "Explain why some animals are more successful competitors",
+          "Describe how plants can spread their seeds and why it's important",
+          "Describe the role of pollen and how plants reproduce",
+          "Explain how pollinators are useful to humans",
+          "Describe the role of pesticides in farming",
+          "Explain how bioaccumulation of pesticides occurs",
+          "Describe how an observational survey is conducted",
+          "Evaluate how useful an observational survey is",
+          "Describe how to measure biodiversity using a quadrat",
+          "Explain why biodiversity is important",
+          "Give the word equation for photosynthesis",
+          "Explain how plants are adapted for photosynthesis",
+          "Describe the roles of different plant structures e.g. leaves, roots, stems, flowers",
+          "Describe how acid rain is formed from burning fossil fuels",
+          "Explain how acid rain affects ecosystems",
+          "Explain the importance of large herbivores in rewilding projects",
+          "Describe what is meant by a keystone species",
+          "Compare vertebrates and invertebrates",
+          "State the general features of the five major vertebrate groups",
+          "Create a key which can be used to classify different species",
+          "Describe what it means for an animal to be adapted to its environment",
+          "Describe the process of evolution by natural selection",
+          "Compare different meanings of extinction",
+          "Describe different theories that explain the extinction of the dinosaurs"
+        ],
+        "Electricity": [
+          "Describe how charged particles interact",
+          "Describe what causes static electricity",
+          "State which particle moves in an electrical current",
+          "Compare electrical conductors and insulators",
+          "Use a simple model to describe the difference between current and potential difference (voltage)",
+          "State the units of current and potential difference",
+          "Explain why current is the same at all points in a circuit",
+          "Explain why some materials conduct electricity",
+          "Describe the difference between a series and parallel circuit (Set 1)",
+          "Calculate the current in a series and parallel circuit (Set 1)",
+          "State how to measure current and potential difference",
+          "Draw complete circuit diagrams using a rule, pencil and straight lines",
+          "Draw a range of common circuit symbols e.g. wire, voltmeter, bulb",
+          "Describe the difference between AC and DC and give an example of the use of each",
+          "Calculate the cost to run an electrical appliance",
+          "Discuss how to reduce electricity costs in the home",
+          "State what happens when two magnets are brought close together",
+          "Draw a magnetic field pattern around a bar magnet",
+          "State the difference between a permanent magnet and an electromagnet",
+          "Describe the uses of electromagnets",
+          "Describe how to make an electromagnet stronger (use the 3cs)",
+          "Describe how an electric motor works",
+          "Evaluate the impact of electric and petrol cars on the environment",
+          "Describe the steps involved in how a power station works",
+          "Compare how a coal fired power station and wind turbine work",
+          "State the energy transfers carried out by solar panels",
+          "Give advantages and disadvantages of the use of renewable energy resources e.g. solar panels and wind turbines",
+          "Convert between millimetres, centimetres and metres"
+        ]
+      }
+    },
+    "cells": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Cells%20Checklist.docx.pdf",
+      "title": "Test 5: Cells checklist",
+      "sections": {
+        "Cells": [
+          "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+          "Compare plant and animal cells using a diagram",
+          "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+          "Define specialised cell",
+          "Explain how the adaptations of specialised cells are linked to their function",
+          "Describe how cells make tissues and tissues make organs",
+          "Give three reasons why cell division takes place",
+          "Describe the importance of cellular respiration",
+          "Give the word equation for aerobic respiration",
+          "Describe the effects of exercise on heart and breathing rate",
+          "Explain why heart rate must increase during intense exercise"
+        ]
+      }
+    },
+    "energy": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Energy%20Checklist.pdf",
+      "title": "Test 5: Energy checklist",
+      "sections": {
+        "Energy": [
+          "Name the different forms of energy store e.g. kinetic, thermal",
+          "Draw energy transfer diagrams for a candle, a catapult and a TV",
+          "Identify useful and wasted energy in an energy transfer",
+          "Calculate the percentage efficiency of an energy transfer",
+          "Explain how fossil fuels are used to generate electricity in a power station",
+          "Draw a diagram showing the carbon cycle",
+          "Describe how human activities have affected the carbon cycle",
+          "Describe how carbon dioxide causes a greenhouse effect",
+          "Name the three most common gases in our atmosphere",
+          "State the approximate percentage of each gas in our atmosphere",
+          "Describe two processes that have caused the atmosphere to change over time"
+        ]
+      }
+    },
+    "chemicals": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Chemicals%20Checklist.pdf",
+      "title": "Test 5: Chemicals checklist",
+      "sections": {
+        "Chemicals": [
+          "Describe what an element is in terms of types of atoms",
+          "Compare chemical compounds to mixtures",
+          "Explain why chemical compounds are hard to separate",
+          "Describe how litmus paper can be used to test acids and bases",
+          "Describe how universal indicator can be used to test acids and bases",
+          "Match colours to numbers on the pH scale",
+          "Describe what a neutralisation reaction is",
+          "Give the chemical equation for a neutralisation reaction",
+          "Identify common scientific warning labels e.g. irritant, corrosive, toxic",
+          "Define the key terms; solution, solvent, solute and soluble",
+          "Draw a particle diagram to show how a solution is formed"
+        ]
+      }
+    },
+    "forces": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Forces%20Checklist.pdf",
+      "title": "Test 5: Forces checklist",
+      "sections": {
+        "Forces": [
+          "Describe the difference between contact and non contact forces",
+          "State which variable goes on each axis",
+          "Draw force arrows on objects that are at rest or moving",
+          "Calculate the resultant force of an object when two forces are acting on it",
+          "State the units of mass and weight",
+          "Explain why your weight changes on different planets but your mass does not",
+          "State the equation that links speed, distance and time.",
+          "State the units of speed, distance and time",
+          "Calculate speed, distance or time using the equation s = d/t. Try this one: A car travels 90m in 45s. What is its speed?",
+          "Describe factors that affect stopping distances",
+          "Describe the difference between braking distance and thinking distance"
+        ]
+      }
+    },
+    "interdependence": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Interdependence%20Checklist.pdf",
+      "title": "Test 5: Interdependence checklist",
+      "sections": {
+        "Interdependence": [
+          "Draw a food chain and web for a described feeding relationship",
+          "Identify producers, consumers and decomposers in a feeding relationship",
+          "Predict the effect of an environmental change on a food web",
+          "State the resources that animals and plants compete for",
+          "Explain why some animals are more successful competitors",
+          "Describe how plants can spread their seeds and why it's important",
+          "Describe the role of pollen and how plants reproduce",
+          "Explain how pollinators are useful to humans",
+          "Describe the role of pesticides in farming",
+          "Explain how bioaccumulation of pesticides occurs",
+          "Describe how an observational survey is conducted",
+          "Evaluate how useful an observational survey is",
+          "Describe how to measure biodiversity using a quadrat",
+          "Explain why biodiversity is important",
+          "Give the word equation for photosynthesis",
+          "Explain how plants are adapted for photosynthesis",
+          "Describe the roles of different plant structures e.g. leaves, roots, stems, flowers",
+          "Describe how acid rain is formed from burning fossil fuels",
+          "Explain how acid rain affects ecosystems",
+          "Explain the importance of large herbivores in rewilding projects",
+          "Describe what is meant by a keystone species",
+          "Compare vertebrates and invertebrates",
+          "State the general features of the five major vertebrate groups",
+          "Create a key which can be used to classify different species",
+          "Describe what it means for an animal to be adapted to its environment",
+          "Describe the process of evolution by natural selection",
+          "Compare different meanings of extinction",
+          "Describe different theories that explain the extinction of the dinosaurs"
+        ]
+      }
+    },
+    "electricity": {
+      "pdf": "resources/Checklists/Term%206/Y7%20Term%206%20Electricity%20Checklist.pdf",
+      "title": "Test 5: Electricity checklist",
+      "sections": {
+        "Electricity": [
+          "Describe how charged particles interact",
+          "Describe what causes static electricity",
+          "State which particle moves in an electrical current",
+          "Compare electrical conductors and insulators",
+          "Use a simple model to describe the difference between current and potential difference (voltage)",
+          "State the units of current and potential difference",
+          "Explain why current is the same at all points in a circuit",
+          "Explain why some materials conduct electricity",
+          "Describe the difference between a series and parallel circuit (Set 1)",
+          "Calculate the current in a series and parallel circuit (Set 1)",
+          "State how to measure current and potential difference",
+          "Draw complete circuit diagrams using a rule, pencil and straight lines",
+          "Draw a range of common circuit symbols e.g. wire, voltmeter, bulb",
+          "Describe the difference between AC and DC and give an example of the use of each",
+          "Calculate the cost to run an electrical appliance",
+          "Discuss how to reduce electricity costs in the home",
+          "State what happens when two magnets are brought close together",
+          "Draw a magnetic field pattern around a bar magnet",
+          "State the difference between a permanent magnet and an electromagnet",
+          "Describe the uses of electromagnets",
+          "Describe how to make an electromagnet stronger (use the 3cs)",
+          "Describe how an electric motor works",
+          "Evaluate the impact of electric and petrol cars on the environment",
+          "Describe the steps involved in how a power station works",
+          "Compare how a coal fired power station and wind turbine work",
+          "State the energy transfers carried out by solar panels",
+          "Give advantages and disadvantages of the use of renewable energy resources e.g. solar panels and wind turbines",
+          "Convert between millimetres, centimetres and metres"
+        ]
+      }
+    }
+  }
+}
