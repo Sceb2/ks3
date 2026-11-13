@@ -1,0 +1,125 @@
+{
+  "test": {
+    "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Checklist.pdf",
+    "sections": {
+      "Induction": [
+        "Link the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit",
+        "Show how circuit components work, including the brightness of bulbs, the loudness of buzzers and the on/off position of switches",
+        "Use symbols when representing a simple circuit in a diagram e.g. bulbs and switches",
+        "Recognise that living things have changed over time and that fossils provide information about living things",
+        "Recognise that living things produce offspring of the same kind, but normally offspring vary and are not identical to their parents",
+        "Identify how animals and plants are adapted to suit their environment",
+        "Explain that unsupported objects fall towards the Earth because of the force of gravity",
+        "Identify the effects of air resistance, water resistance and friction",
+        "Describe the changes as humans develop to old age",
+        "Identify the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood",
+        "Recognise the impact of diet, exercise, drugs and lifestyle on the way their bodies function",
+        "Describe the ways in which nutrients and water are transported within animals, including humans",
+        "Recognise that light appears to travel in straight lines",
+        "Explain that we see things because light travels from light sources to our eyes or from light sources to objects and then to our eyes",
+        "Use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them",
+        "Describe the differences in the life cycles of a mammal, an amphibian, an insect and a bird",
+        "Describe how plants reproduce",
+        "Describe how animals reproduce",
+        "Describe how living things are classified into groups according to common characteristics"
+      ],
+      "Cells": [
+        "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+        "Compare plant and animal cells using a diagram",
+        "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+        "Label a diagram to show the parts of a microscope",
+        "Define specialised cell",
+        "Identify specialised cells of plants and animals from a diagram",
+        "Explain how the adaptations of specialised cells are linked to their function",
+        "Order the levels of organisation in organisms",
+        "Describe how cells make tissues and tissues make organs",
+        "State the function and location of key human organs",
+        "Give three reasons why cell division takes place",
+        "Sequence the stages of cell division",
+        "Explain why heart rate must increase during intense exercise"
+      ],
+      "Energy": [
+        "Name the different forms of energy store e.g. kinetic, thermal",
+        "Describe the difference between energy stores and transfers",
+        "State the four ways energy can be transferred",
+        "Draw energy transfer diagrams for a candle, a catapult and a TV",
+        "Identify useful and wasted energy in an energy transfer",
+        "Calculate the percentage efficiency of an energy transfer",
+        "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+        "State the meaning of \"non-renewable\"",
+        "State the tree types of fossil fuel and describe their uses",
+        "Explain how fossil fuels are used to generate electricity in a power station",
+        "Define what a renewable energy resource is",
+        "State examples of renewable energy resources e.g. solar, wind",
+        "Explain how solar, wind and tidal resources work in terms of energy transfer",
+        "Compare the advantages/disadvantages of renewables and fossil fuels"
+      ]
+    }
+  },
+  "prior": {
+    "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Induction%20Checklist.pdf",
+    "sections": {
+      "Induction": [
+        "Link the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit",
+        "Show how circuit components work, including the brightness of bulbs, the loudness of buzzers and the on/off position of switches",
+        "Use symbols when representing a simple circuit in a diagram e.g. bulbs and switches",
+        "Recognise that living things have changed over time and that fossils provide information about living things",
+        "Recognise that living things produce offspring of the same kind, but normally offspring vary and are not identical to their parents",
+        "Identify how animals and plants are adapted to suit their environment",
+        "Explain that unsupported objects fall towards the Earth because of the force of gravity",
+        "Identify the effects of air resistance, water resistance and friction",
+        "Describe the changes as humans develop to old age",
+        "Identify the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood",
+        "Recognise the impact of diet, exercise, drugs and lifestyle on the way their bodies function",
+        "Describe the ways in which nutrients and water are transported within animals, including humans",
+        "Recognise that light appears to travel in straight lines",
+        "Explain that we see things because light travels from light sources to our eyes or from light sources to objects and then to our eyes",
+        "Use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them",
+        "Describe the differences in the life cycles of a mammal, an amphibian, an insect and a bird",
+        "Describe how plants reproduce",
+        "Describe how animals reproduce",
+        "Describe how living things are classified into groups according to common characteristics"
+      ]
+    }
+  },
+  "cells": {
+    "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Cells%20Checklist.pdf",
+    "sections": {
+      "Cells": [
+        "Draw a labelled diagram of an animal cell including: membrane, nucleus and cytoplasm",
+        "Compare plant and animal cells using a diagram",
+        "Describe the role cell organelles e.g. membrane, nucleus, cytoplasm, mitochondria",
+        "Label a diagram to show the parts of a microscope",
+        "Define specialised cell",
+        "Identify specialised cells of plants and animals from a diagram",
+        "Explain how the adaptations of specialised cells are linked to their function",
+        "Order the levels of organisation in organisms",
+        "Describe how cells make tissues and tissues make organs",
+        "State the function and location of key human organs",
+        "Give three reasons why cell division takes place",
+        "Sequence the stages of cell division"
+      ]
+    }
+  },
+  "energy": {
+    "pdf": "resources/Checklists/Term%201/Y7%20Term%201%20Energy%20Checklist.pdf",
+    "sections": {
+      "Energy": [
+        "Name the different forms of energy store e.g. kinetic, thermal",
+        "Describe the difference between energy stores and transfers",
+        "State the four ways energy can be transferred",
+        "Draw energy transfer diagrams for a candle, a catapult and a TV",
+        "Identify useful and wasted energy in an energy transfer",
+        "Calculate the percentage efficiency of an energy transfer",
+        "Describe the difference in terms of energy transfer of an efficient device and a less efficient device",
+        "State the meaning of \"non-renewable\"",
+        "State the tree types of fossil fuel and describe their uses",
+        "Explain how fossil fuels are used to generate electricity in a power station",
+        "Define what a renewable energy resource is",
+        "State examples of renewable energy resources e.g. solar, wind",
+        "Explain how solar, wind and tidal resources work in terms of energy transfer",
+        "Compare the advantages/disadvantages of renewables and fossil fuels"
+      ]
+    }
+  }
+}

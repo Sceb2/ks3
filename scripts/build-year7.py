@@ -6,6 +6,7 @@ from lxml import html
 
 ROOT=Path(__file__).resolve().parent.parent
 DATA=json.loads((ROOT/'data/year7-resources.json').read_text())
+PLC=json.loads((ROOT/'data/y7-test1-plc.json').read_text())
 DRAFT=(ROOT/'draft-y7-test-1-route-2.html').read_text()
 old1=html.parse(str(ROOT/'year-7-test-1.html'))
 draft_tree=html.fromstring(DRAFT)
@@ -36,8 +37,10 @@ def link(a,cls='resource-row',pack=False):
     href=escape(a['href'],quote=True)
     return f'<a class="{cls}" href="{href}" target="_blank" rel="noopener noreferrer"><span>{title}</span>{ext_icon}<span class="sr-only"> (opens in a new tab)</span></a>'
 
-def checklist(href):
-    return f'<a class="checklist-link" href="{escape(href,quote=True)}" target="_blank" rel="noopener noreferrer">{check_img}<span><strong>Start with the checklist</strong><small>Check what you need to revise</small></span><span class="sr-only"> (opens in a new tab)</span></a>'
+def checklist(href,plc=None):
+    content=f'{check_img}<span><strong>Start with the checklist</strong><small>Check what you need to revise</small></span>'
+    if plc:return f'<button class="checklist-link" type="button" data-plc="{plc}" aria-haspopup="dialog">{content}</button>'
+    return f'<a class="checklist-link" href="{escape(href,quote=True)}" target="_blank" rel="noopener noreferrer">{content}<span class="sr-only"> (opens in a new tab)</span></a>'
 
 def group(title,note,items):
     if not items:return ''
@@ -63,7 +66,9 @@ def slug_for(title,used):
 def topics_view(i):
     test=DATA[str(i)];used=set();rows=[];sections=[];mapping={}
     for n,t in enumerate(test['topics'],1):
-        slug=slug_for(t['title'],used);mapping[slug]=t['title']
+        slug=slug_for(t['title'],used)
+        if i==1 and t['title']=='Induction':slug='prior'
+        mapping[slug]=t['title']
         rows.append(f'<a class="topic-link" href="#{slug}"><span class="topic-number" aria-hidden="true">{n}</span><span class="topic-label">{escape(t["title"])}</span></a>')
         smart=[]
         if i==1 and slug in SMART:smart=[{'title':'Cell Structure' if slug=='cells' else 'Energy Stores and Transfers','href':SMART[slug]}]
@@ -73,9 +78,9 @@ def topics_view(i):
         res+=questions(t['questions'])
         if t['other']:
             res+='<details class="extra-links"><summary>Other resources <span>Videos and websites</span></summary><div class="resource-list">'+''.join(link(a) for a in t['other'])+'</div></details>'
-        sections.append(f'<section class="view topic-view" data-view="{slug}" id="{slug}" aria-labelledby="{slug}-title" hidden><div class="topic-heading"><h2 class="sr-only" id="{slug}-title" tabindex="-1">{escape(t["title"])}</h2>{checklist(t["checklist"])}</div>{res}</section>')
+        sections.append(f'<section class="view topic-view" data-view="{slug}" id="{slug}" aria-labelledby="{slug}-title" hidden><div class="topic-heading"><h2 class="sr-only" id="{slug}-title" tabindex="-1">{escape(t["title"])}</h2>{checklist(t["checklist"],slug if i==1 else None)}</div>{res}</section>')
     tips='<details class="tips"><summary>How should I revise?</summary><ol class="revision-journey"><li><strong>Check</strong><span>Use your checklist to choose what to revise.</span></li><li><strong>Learn</strong><span>Read a knowledge organiser or use a Smart Bank.</span></li><li><strong>Recall</strong><span>Test what you remember without looking.</span></li><li><strong>Practise</strong><span>Try a quiz or exam-style question pack.</span></li><li><strong>Review</strong><span>Go back to anything you found difficult.</span></li></ol></details>'
-    test_view=f'<section class="view" data-view="test" id="test" aria-labelledby="test-title"><h2 class="sr-only" id="test-title" tabindex="-1">Test {i} topics</h2>{checklist(test["test_checklist"])}<nav class="topic-list" aria-label="Test {i} topics">'+''.join(rows)+'</nav>'+tips+'</section>'
+    test_view=f'<section class="view" data-view="test" id="test" aria-labelledby="test-title"><h2 class="sr-only" id="test-title" tabindex="-1">Test {i} topics</h2>{checklist(test["test_checklist"],'test' if i==1 else None)}<nav class="topic-list" aria-label="Test {i} topics">'+''.join(rows)+'</nav>'+tips+'</section>'
     return test_view+''.join(sections),mapping
 
 def script(i,mapping):
@@ -85,7 +90,13 @@ def script(i,mapping):
 for i in range(1,6):
     content,names=topics_view(i)
     page=head.replace('Year 7 Test 1 · Exam Bank',f'Year 7 Test {i} · Exam Bank')
-    page+=f'<body><a class="skip" href="#main">Skip to resources</a><div class="page"><header class="masthead"><h1>Test {i}</h1><a class="header-back" href="index.html">← Back to Year 7</a></header><main id="main" class="main" tabindex="-1">{content}</main><footer class="footer"><a class="footer-back" href="#test" hidden>← Back to topics</a><a class="feedback-link" href="mailto:wormstonel@crispins.co.uk">Got feedback? Email Mr Wormstone</a><button class="theme" id="theme" type="button" aria-pressed="false">Dark mode</button></footer></div>{script(i,names)}</body></html>'
+    if i==1:page=page.replace('</head>','<style>'+ (ROOT/'assets/plc.css').read_text() +'</style></head>')
+    modal='';extra_scripts=''
+    if i==1:
+        modal='''<dialog class="plc-dialog" id="plc-dialog" aria-labelledby="plc-title"><div class="plc-toolbar"><button class="plc-action" id="plc-print" type="button">Print a copy</button><button class="plc-close" id="plc-close" type="button" aria-label="Close checklist">×</button></div><div class="plc-body"><h2 id="plc-title">Checklist</h2><p class="plc-intro">Choose red, amber or green for each learning outcome.</p><table class="plc-table"><thead><tr><th scope="col">Learning outcome</th><th scope="col">My RAG rating</th></tr></thead><tbody id="plc-table-body"></tbody></table><div class="plc-footer"><a id="plc-original" href="#" target="_blank" rel="noopener noreferrer">Open the original PDF <span class="sr-only">(opens in a new tab)</span></a><button class="plc-reset" id="plc-reset" type="button">Clear my ratings</button></div></div></dialog>'''
+        data_json=json.dumps(PLC,ensure_ascii=False).replace('<','\\u003c')
+        extra_scripts='<script id="plc-data" type="application/json">'+data_json+'</script><script src="assets/jspdf.umd.min.js"></script><script src="assets/plc.js"></script>'
+    page+=f'<body><a class="skip" href="#main">Skip to resources</a><div class="page"><header class="masthead"><h1>Test {i}</h1><a class="header-back" href="index.html">← Back to Year 7</a></header><main id="main" class="main" tabindex="-1">{content}</main><footer class="footer"><a class="footer-back" href="#test" hidden>← Back to topics</a><a class="feedback-link" href="mailto:wormstonel@crispins.co.uk">Got feedback? Email Mr Wormstone</a><button class="theme" id="theme" type="button" aria-pressed="false">Dark mode</button></footer></div>{modal}{script(i,names)}{extra_scripts}</body></html>'
     (ROOT/f'year-7-test-{i}.html').write_text(page)
 
 # A year hub follows the same type, colour and numbered navigation as its test pages.
