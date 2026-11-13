@@ -72,3 +72,11 @@ Practice question selection follows **test → topic → difficulty (Developing,
 7. Decide whether to retain Forms, recreate quizzes, or do both; identify any need for teacher reporting and student accounts.
 8. Agree how Google Sites embed height, scrolling, internal links, browser back, direct links to topics and accessibility will work. Test a representative prototype on desktop and mobile before migrating all pages.
 9. Decide the migration order, content owner, accuracy review and process for keeping shared resources current. Verify links, accessibility, interactive tasks and source attribution before publication.
+
+## Year 7 development branch redesign (13 November 2026)
+
+The `development` branch now contains the approved Year 7 Test 1 visual direction across `index.html` and `year-7-test-1.html` through `year-7-test-5.html`. The year hub links to each test; each test links to its own topic views. The current checklist illustration is `draft-assets/checklist-three-arrows.png`. Do not treat the untracked earlier image experiments or preview ZIP as site assets.
+
+`data/year7-resources.json` is the link inventory taken from the pre-redesign Year 7 pages. `scripts/extract-year7.py` reproduces that inventory from commit `24884d1`; `scripts/build-year7.py` generates the new static pages using the approved draft styles and the inventory. Keep test-specific Forms and checklists in their corresponding test entries. Test 5 uses Term 6 checklists. Retain the full Developing, Secure and Extending question-pack lists for each topic, and link to external revision sites rather than copying their content.
+
+The Test 1 legacy page used SharePoint checklist links. The new version uses the matching local Term 1 PDFs from the supplied resources. The two already-existing Smart Banks remain linked on Test 1. No additional Smart Bank pages have been created. Check the public GitHub Pages result and Google Sites embedding before promoting `development` to `main`.

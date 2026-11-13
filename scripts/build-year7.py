@@ -1,0 +1,99 @@
+from pathlib import Path
+from urllib.parse import unquote
+from html import escape
+import json,re
+from lxml import html
+
+ROOT=Path(__file__).resolve().parent.parent
+DATA=json.loads((ROOT/'data/year7-resources.json').read_text())
+DRAFT=(ROOT/'draft-y7-test-1-route-2.html').read_text()
+old1=html.parse(str(ROOT/'year-7-test-1.html'))
+draft_tree=html.fromstring(DRAFT)
+for t in DATA['1']['topics']:
+    slug={'Induction':'prior','Cells':'cells','Energy':'energy'}[t['title']]
+    t['checklist']=draft_tree.xpath(f'//section[@id="{slug}"]//a[contains(@class,"checklist-link")]/@href')[0]
+DATA['1']['test_checklist']=draft_tree.xpath('//section[@id="test"]//a[contains(@class,"checklist-link")]/@href')[0]
+SMART={}
+for a in old1.xpath('//a[contains(@href,"smart-bank")]'):
+    if 'cell' in a.get('href'):SMART['cells']=a.get('href')
+    if 'energy' in a.get('href'):SMART['energy']=a.get('href')
+
+head=DRAFT[:DRAFT.index('</head>')+7]
+head=head.replace('Year 7 Test 1 · Exam Bank draft','Year 7 Test 1 · Exam Bank')
+head=head.replace('draft-assets/checklist-three-arrows.png','draft-assets/checklist-three-arrows.png')
+style=html.fromstring(DRAFT)
+icons={}
+for group in style.xpath('//section[contains(@class,"resource-group")][h3]'):
+    title=group.xpath('string(./h3/span)').strip()
+    if title and title not in icons:
+        icons[title]=html.tostring(group.xpath('./h3/svg')[0],encoding='unicode',method='html')
+ext_icon=html.tostring(style.xpath('//svg[contains(@class,"external-icon")]')[0],encoding='unicode',method='html')
+check_img='<img class="checklist-illustration" src="draft-assets/checklist-three-arrows.png" alt="" width="96" height="80">'
+
+def link(a,cls='resource-row',pack=False):
+    title=escape(a['title'].replace('Open question pack','').strip())
+    href=escape(a['href'],quote=True)
+    return f'<a class="{cls}" href="{href}" target="_blank" rel="noopener noreferrer"><span>{title}</span>{ext_icon}<span class="sr-only"> (opens in a new tab)</span></a>'
+
+def checklist(href):
+    return f'<a class="checklist-link" href="{escape(href,quote=True)}" target="_blank" rel="noopener noreferrer">{check_img}<span><strong>Start with the checklist</strong><small>Check what you need to revise</small></span><span class="sr-only"> (opens in a new tab)</span></a>'
+
+def group(title,note,items):
+    if not items:return ''
+    return f'<section class="resource-group"><h3>{icons[title]}<span>{title}</span></h3><p class="group-note">{note}</p><div class="resource-list">'+''.join(link(a) for a in items)+'</div></section>'
+
+def questions(levels):
+    if not any(levels.values()):return ''
+    inner=''
+    for name in ('developing','secure','extending'):
+        items=levels.get(name,[])
+        if items:inner+=f'<details class="level"><summary>{name.title()}</summary><div class="resource-list">'+''.join(link(a,pack=True) for a in items)+'</div></details>'
+    return f'<section class="resource-group"><h3>{icons["Exam-style questions"]}<span>Exam-style questions</span></h3><p class="group-note">Choose a level, then a question pack.</p>{inner}</section>'
+
+def slug_for(title,used):
+    base=title.lower().replace('revision: ','revision-')
+    base=re.sub(r'[^a-z0-9]+','-',base).strip('-')
+    slug=base
+    n=2
+    while slug in used:slug=f'{base}-{n}';n+=1
+    used.add(slug)
+    return slug
+
+def topics_view(i):
+    test=DATA[str(i)];used=set();rows=[];sections=[];mapping={}
+    for n,t in enumerate(test['topics'],1):
+        slug=slug_for(t['title'],used);mapping[slug]=t['title']
+        rows.append(f'<a class="topic-link" href="#{slug}"><span class="topic-number" aria-hidden="true">{n}</span><span class="topic-label">{escape(t["title"])}</span></a>')
+        smart=[]
+        if i==1 and slug in SMART:smart=[{'title':'Cell Structure' if slug=='cells' else 'Energy Stores and Transfers','href':SMART[slug]}]
+        res=group('Smart Bank','Learn in short chunks, then check understanding.',smart)
+        res+=group('Knowledge organisers','Review key facts, then recall from memory.',t['knowledge'])
+        res+=group('Multiple-choice quizzes','Answer quick questions and check your understanding.',t['quizzes'])
+        res+=questions(t['questions'])
+        if t['other']:
+            res+='<details class="extra-links"><summary>Other resources <span>Videos and websites</span></summary><div class="resource-list">'+''.join(link(a) for a in t['other'])+'</div></details>'
+        sections.append(f'<section class="view topic-view" data-view="{slug}" id="{slug}" aria-labelledby="{slug}-title" hidden><div class="topic-heading"><h2 class="sr-only" id="{slug}-title" tabindex="-1">{escape(t["title"])}</h2>{checklist(t["checklist"])}</div>{res}</section>')
+    tips='<details class="tips"><summary>How should I revise?</summary><ol class="revision-journey"><li><strong>Check</strong><span>Use your checklist to choose what to revise.</span></li><li><strong>Learn</strong><span>Read a knowledge organiser or use a Smart Bank.</span></li><li><strong>Recall</strong><span>Test what you remember without looking.</span></li><li><strong>Practise</strong><span>Try a quiz or exam-style question pack.</span></li><li><strong>Review</strong><span>Go back to anything you found difficult.</span></li></ol></details>'
+    test_view=f'<section class="view" data-view="test" id="test" aria-labelledby="test-title"><h2 class="sr-only" id="test-title" tabindex="-1">Test {i} topics</h2>{checklist(test["test_checklist"])}<nav class="topic-list" aria-label="Test {i} topics">'+''.join(rows)+'</nav>'+tips+'</section>'
+    return test_view+''.join(sections),mapping
+
+def script(i,mapping):
+    names=json.dumps(mapping,ensure_ascii=False)
+    return f'''<script>(()=>{{const views=[...document.querySelectorAll('[data-view]')],ids=new Set(views.map(v=>v.dataset.view)),names={names};function show(focus){{let id=decodeURIComponent(location.hash.slice(1));if(!ids.has(id))id='test';for(const v of views)v.hidden=v.dataset.view!==id;document.documentElement.dataset.pageView=id;document.querySelector('.footer-back').hidden=id==='test';document.querySelector('.masthead h1').textContent=id==='test'?'Test {i}':'Test {i}: '+names[id];const back=document.querySelector('.header-back');back.href=id==='test'?'index.html':'#test';back.textContent=id==='test'?'← Back to Year 7':'← Back to topics';document.title=(id==='test'?'Year 7 Test {i}':'Test {i}: '+names[id])+' · Exam Bank';if(focus){{const h=document.getElementById(id+'-title');if(h)h.focus({{preventScroll:true}});window.scrollTo(0,0)}}}}window.addEventListener('hashchange',()=>show(true));show(false);const b=document.getElementById('theme'),root=document.documentElement,key='smart-bank-y7-hub-theme',media=matchMedia('(prefers-color-scheme: dark)');let mode='system';try{{let x=localStorage.getItem(key);if(x==='dark'||x==='light')mode=x}}catch(e){{}}function render(){{if(mode==='system')delete root.dataset.theme;else root.dataset.theme=mode;let dark=mode==='dark'||(mode==='system'&&media.matches);b.setAttribute('aria-pressed',String(dark));b.textContent=dark?'Light mode':'Dark mode'}}b.addEventListener('click',()=>{{let dark=mode==='dark'||(mode==='system'&&media.matches);mode=dark?'light':'dark';try{{localStorage.setItem(key,mode)}}catch(e){{}}render()}});if(media.addEventListener)media.addEventListener('change',()=>{{if(mode==='system')render()}});render()}})();</script>'''
+
+for i in range(1,6):
+    content,names=topics_view(i)
+    page=head.replace('Year 7 Test 1 · Exam Bank',f'Year 7 Test {i} · Exam Bank')
+    page+=f'<body><a class="skip" href="#main">Skip to resources</a><div class="page"><header class="masthead"><h1>Test {i}</h1><a class="header-back" href="index.html">← Back to Year 7</a></header><main id="main" class="main" tabindex="-1">{content}</main><footer class="footer"><a class="footer-back" href="#test" hidden>← Back to topics</a><a class="feedback-link" href="mailto:wormstonel@crispins.co.uk">Got feedback? Email Mr Wormstone</a><button class="theme" id="theme" type="button" aria-pressed="false">Dark mode</button></footer></div>{script(i,names)}</body></html>'
+    (ROOT/f'year-7-test-{i}.html').write_text(page)
+
+# A year hub follows the same type, colour and numbered navigation as its test pages.
+months={1:'October',2:'December',3:'February',4:'March',5:'July'}
+rows=[]
+for i in range(1,6):
+    topic_names=', '.join(t['title'] for t in DATA[str(i)]['topics'])
+    rows.append(f'<a class="topic-link year-test-link" href="year-7-test-{i}.html"><span class="topic-number" aria-hidden="true">{i}</span><span class="topic-label"><strong>Test {i}</strong><small>{months[i]} · {escape(topic_names)}</small></span></a>')
+index_head=head.replace('Year 7 Test 1 · Exam Bank','Year 7 Science · Exam Bank').replace('</head>','<style>.year-test-link .topic-label strong,.year-test-link .topic-label small{display:block}.year-test-link .topic-label small{font-size:.83rem;font-weight:400;color:var(--muted);line-height:1.35;margin-top:3px}.year-test-link{min-height:72px}.year-intro{color:var(--muted);margin:0 0 22px}.year-hub h1{font-size:1.5rem;margin:0 0 8px;color:var(--green)}.year-hub .topic-list{margin-top:0}</style></head>')
+index=f'''{index_head}<body><a class="skip" href="#main">Skip to tests</a><div class="page"><main id="main" class="main year-hub" tabindex="-1"><h1>Year 7 Science</h1><p class="year-intro">Choose your test to find its checklists, revision resources and practice questions.</p><nav class="topic-list" aria-label="Year 7 tests">{''.join(rows)}</nav><details class="tips"><summary>How will I be assessed?</summary><p>You will have five tests this year. Each test includes questions from that term and previous topics.</p></details></main><footer class="footer"><a class="feedback-link" href="mailto:wormstonel@crispins.co.uk">Got feedback? Email Mr Wormstone</a><button class="theme" id="theme" type="button" aria-pressed="false">Dark mode</button></footer></div><script>(()=>{{const b=document.getElementById('theme'),root=document.documentElement,key='smart-bank-y7-hub-theme',media=matchMedia('(prefers-color-scheme: dark)');let mode='system';try{{let x=localStorage.getItem(key);if(x==='dark'||x==='light')mode=x}}catch(e){{}}function render(){{if(mode==='system')delete root.dataset.theme;else root.dataset.theme=mode;let dark=mode==='dark'||(mode==='system'&&media.matches);b.setAttribute('aria-pressed',String(dark));b.textContent=dark?'Light mode':'Dark mode'}}b.addEventListener('click',()=>{{let dark=mode==='dark'||(mode==='system'&&media.matches);mode=dark?'light':'dark';try{{localStorage.setItem(key,mode)}}catch(e){{}}render()}});if(media.addEventListener)media.addEventListener('change',()=>{{if(mode==='system')render()}});render()}})();</script></body></html>'''
+(ROOT/'index.html').write_text(index)
+print('Built Year 7 index and five tests')
