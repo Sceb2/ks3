@@ -1,4 +1,4 @@
-/* Test 1 interactive checklists. The printed PDF is built by plc.js. */
+/* Year 7 interactive checklists. The printed PDF is built by plc.js. */
 button.checklist-link{font:inherit;cursor:pointer;color:inherit}
 button.checklist-link:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .plc-dialog{width:min(850px,calc(100vw - 20px));max-height:94dvh;padding:0;border:1px solid #9eb4a7;border-radius:10px;background:#fff;color:#183127;box-shadow:0 22px 80px rgba(0,0,0,.28)}

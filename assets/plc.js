@@ -1,17 +1,18 @@
 (()=>{
-  const data=JSON.parse(document.getElementById('plc-data').content.textContent);
+  const config=JSON.parse(document.getElementById('plc-data').content.textContent);
+  const data=config.checklists;
   const dialog=document.getElementById('plc-dialog');
   const title=document.getElementById('plc-title');
   const table=document.getElementById('plc-table-body');
   const source=document.getElementById('plc-original');
-  const storagePrefix='y7-test1-plc-';
+  const storagePrefix='y7-test'+config.testNumber+'-plc-';
   let currentKey=null, outcomes=[], values=[];
   const read=key=>{try{return JSON.parse(sessionStorage.getItem(storagePrefix+key))||[]}catch{return []}};
   const save=()=>{try{sessionStorage.setItem(storagePrefix+currentKey,JSON.stringify(values))}catch{}};
   function open(key){
     const item=data[key];if(!item)return;
     currentKey=key;outcomes=[];values=read(key);table.replaceChildren();
-    title.textContent=key==='test'?'Test 1 checklist':'Test 1: '+Object.keys(item.sections)[0]+' checklist';
+    title.textContent=item.title;
     source.href=item.pdf;
     for(const [section,rows] of Object.entries(item.sections)){
       const heading=document.createElement('tr');heading.className='plc-section';const th=document.createElement('th');th.colSpan=2;th.textContent=section;heading.append(th);table.append(heading);
