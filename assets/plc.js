@@ -1,5 +1,5 @@
 (()=>{
-  const data=JSON.parse(document.getElementById('plc-data').textContent);
+  const data=JSON.parse(document.getElementById('plc-data').content.textContent);
   const dialog=document.getElementById('plc-dialog');
   const title=document.getElementById('plc-title');
   const table=document.getElementById('plc-table-body');
