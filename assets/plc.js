@@ -33,7 +33,7 @@
     dialog.showModal();
     document.getElementById('plc-close').focus();
   }
-  document.querySelectorAll('button[data-plc]').forEach(button=>button.addEventListener('click',()=>open(button.dataset.plc)));
+  document.querySelectorAll('button[data-plc]').forEach(button=>{button.disabled=false;button.addEventListener('click',()=>open(button.dataset.plc))});
   document.getElementById('plc-close').addEventListener('click',()=>dialog.close());
   document.getElementById('plc-reset').addEventListener('click',()=>{values=[];save();table.querySelectorAll('.plc-item').forEach(row=>{row.dataset.state='';row.querySelectorAll('input').forEach(input=>input.checked=false)})});
   document.getElementById('plc-print').addEventListener('click',()=>{

@@ -39,7 +39,7 @@ def link(a,cls='resource-row',pack=False):
 
 def checklist(href,plc=None):
     content=f'{check_img}<span><strong>Start with the checklist</strong><small>Check what you need to revise</small></span>'
-    if plc:return f'<button class="checklist-link" type="button" data-plc="{plc}" aria-haspopup="dialog">{content}</button>'
+    if plc:return f'<button class="checklist-link" type="button" disabled data-plc="{plc}" aria-haspopup="dialog">{content}</button>'
     return f'<a class="checklist-link" href="{escape(href,quote=True)}" target="_blank" rel="noopener noreferrer">{content}<span class="sr-only"> (opens in a new tab)</span></a>'
 
 def group(title,note,items):
